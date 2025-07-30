@@ -11,19 +11,35 @@
 	</head>
 	<body>
 		<div class="container">
-            <div class="zapros_block">
-                <div class="zapros_img">
-                    <img src="/img/kaspi.png" alt="">
-                </div>
-                <div class="zapros_item"> 
-                    <div class="zapros_title">Оставьте запрос</div>               
-                    <div class="form">
-                        <input placeholder="Сумма кредита" type="text">
-                        <input placeholder="Срок кредита (в месяцах)" type="text">
-                        <input placeholder="Процентная ставка (годовая, %) " type="text">
+            <div class="zapros_section">
+                <div class="zapros_block">
+                    <div class="zapros_img">
+                        <img src="/img/kaspi.png" alt="">
                     </div>
-                    <div class="zapros_btn">
-                        <button>Рассчитать</button>
+                    <div class="zapros_item"> 
+                        <div class="zapros_title">Оставьте запрос</div>               
+                        <div class="form">
+                            <input id="numOne" placeholder="Сумма кредита" type="number">
+                            <input id="numTwo" placeholder="Срок кредита (в месяцах)" type="number">
+                            <input id="numThree" placeholder="Процентная ставка (годовая, %) " type="number">
+                        </div>
+                        <div class="zapros_btn">
+                            <button id="btn">Рассчитать</button>
+                        </div>
+                        <div class="result">
+                            <div>
+                                <p>Ежемесж. расчет</p> 
+                                <span id="result-pay"></span>
+                            </div>
+                            <div>
+                                <p>Общая сумма выплат</p> 
+                                <span id="result-pay-two"></span>
+                            </div>
+                            <div>
+                                <p>Переплата (общая сумма выплат - тело кредита)</p> 
+                                <span id="result-pay-three"></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

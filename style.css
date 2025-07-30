@@ -73,3 +73,31 @@ body{
     gap: 15px;
 }
 
+.result{
+    margin-top: 30px;
+    border: 1px solid #dadada;
+    border-radius: 20px;
+    display: flex;
+    align-items: start;
+    padding: 20px;
+    justify-content: center;
+    width: auto;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.result div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #dadada;
+}
+
+.zapros_section {
+    height: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
